@@ -9,11 +9,11 @@
                     <div class="w-[70px] h-[70px] rounded-full bg-white border-[#239ad6]">
                         <img class="h-full w-full rounded-full" src="/images/profile.jpg" alt="">
                     </div>
-                    <h2>Nehemia</h2>
-                    <button class="flex gap-4">
+                    <h2 class="mb-1">Nehemia</h2>
+                    <nuxt-link to="/admin/principal" class="flex gap-4">
                         <span>Profile</span>
-                        <span>Icon</span>
-                    </button>
+                        <font-awesome-icon icon="fa-solid fa-user" />
+                    </nuxt-link>
                 </div>
             </div>
         </div>

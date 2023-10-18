@@ -5,14 +5,16 @@
                 <span>{{ title }}</span>
                 <font-awesome-icon icon="fa-solid fa-chevron-down" class="fa-1x"/>
             </button>
-            <div v-if="isOpen" class="py-2 px-2">{{ content }}</div>
+            <div v-if="isOpen" class="py-2 px-2">
+                <slot/>
+            </div>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue"
-const props = defineProps(['title', 'content'])
+const props = defineProps(['title',])
 const isOpen = ref(false)
 
 const toggleOpen = () => {
